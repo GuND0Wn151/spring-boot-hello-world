@@ -21,4 +21,4 @@ jobs:
     - name: Display Docker images
       run: docker images
     - name: Push image to Docker
-      run: docker push tsrana1/hello-cicd:any      
+      run: docker push maheshgupta15/ci-cd-tesing:any      

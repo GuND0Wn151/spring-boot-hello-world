@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag tsrana1/hello-cicd:any
+      run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USER }}/hello-cicd:any
     - name: Login to Docker
       run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWD }}      
     - name: Display Docker images
